@@ -27,7 +27,7 @@
 const itemAmount = document.querySelectorAll('.item');
 console.log(`Number of categories: ${itemAmount.length}`);
 
-const first = itemAmount.forEach(element => {
+itemAmount.forEach(element => {
   const category = element.querySelector('h2');
   const categoryLength = element.querySelectorAll('li');
   console.log(`Category: ${category.textContent}`);

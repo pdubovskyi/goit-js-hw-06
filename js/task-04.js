@@ -3,7 +3,7 @@ valueEl.textContent = 0;
 
 const decrBtn = document.querySelector('button[data-action="decrement"]');
 const onDecrement = event => {
-  return (valueEl.textContent = -Math.abs(+decrBtn.textContent + Number(valueEl.textContent)));
+  return (valueEl.textContent = +decrBtn.textContent + Number(valueEl.textContent));
 };
 decrBtn.addEventListener('click', onDecrement);
 
